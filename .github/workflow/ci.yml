@@ -36,6 +36,7 @@ jobs:
       - run:
           name: Run linter and unit tests with coverage
           command: npm run quality
+       - npm run dev
   check-for-pr:
     executor: base
     steps:
